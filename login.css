@@ -1,0 +1,200 @@
+@charset "UTF-8";
+
+body {
+    background-color: #6F27D7;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+
+#logindiv {
+    border-radius: 10px;
+    font-family: 'Poppins';
+    font-size: 15px;
+    text-decoration: none;
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px #000000af;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 80px;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 350px;
+    height: 600px;
+}
+
+.title {
+    font-family: 'Abel';
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0;
+    background-color: #6F27D7;
+    transition: 0.5s;
+}
+
+.title::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0;
+    background-color: #6F27D7;
+    transition: 0.5s;
+}
+
+.title::after {
+    left: 0;
+    bottom: 600px;
+}
+
+.title::before {
+    right: 0;
+    top: 50px;
+}
+
+.title:hover {
+    color: black;
+}
+
+.title:hover::after {
+    width: 50%;
+}
+
+.title:hover::before {
+    width: 50%;
+}
+
+/* 
+.title:hover {
+    color: #6F27D7;
+    text-shadow: #6F27D7 0 0 10px;
+} */
+
+p {
+    font-family: 'Poppins';
+    font-size: 15px;
+}
+
+input {
+    border: gray solid 1px;
+    font-family: 'Poppins';
+    font-size: 15px;
+    width: 85%;
+    padding: 15px;
+    border: none;
+    /* border-radius: 10px; */
+    border-style: dotted;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+}
+
+input:hover {
+    color: #6F27D7;
+}
+
+.titlecpf {
+    width: 28px;
+    transition: 0.2s;
+}
+
+.titlecpf:hover {
+    font-size: 17px;
+    color: #6F27D7;
+    /* transition: all 300ms ease-in-out; */
+    scale: 1;
+    transition: 0.2s;
+    transform: scale(1);
+}
+
+.titlepassword {
+    width: 42px;
+    transition: 0.2s;
+}
+
+.titlepassword:hover {
+    font-size: 17px;
+    color: blueviolet;
+    transition: 0.2s;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+}
+
+.continue {
+    font-family: 'Poppins';
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #6F27D7;
+    border: none;
+    border-radius: 10px;
+    padding: 25px;
+    width: 60%;
+}
+
+.continue:hover {
+    color: #000000;
+    background-color: #945ce2;
+    transition: 0.5s;
+}
+
+.continue:active {
+    color: #ffffff;
+    background-color: #6F27D7;
+}
+
+.continue:hover {
+    box-shadow: 5px 5px 10px #000000af;
+}
+
+.acontinue {
+    text-decoration: none;
+    color: #ffffff;
+    padding-left: 45px;
+}
+
+.aforgot {
+    text-decoration: none;
+    color: black;
+}
+
+.aforgot:hover {
+    color: #6F27D7;
+}
+
+.newclient {
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+}
+
+.anewclient {
+    text-decoration: none;
+    color: black;
+}
+
+.anewclient:hover {
+    color: #6F27D7;
+}
